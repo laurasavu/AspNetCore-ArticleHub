@@ -1,0 +1,36 @@
+
+.vs/
+
+# Build outputs
+bin /
+obj /
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.swp
+*.log
+*.vs /
+.vscode /
+.idea /
+
+# Local configuration files
+appsettings.Development.json
+appsettings.Local.json
+
+# Sensitive files
+secrets.json
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.pid
+
+# Publish outputs
+publish /
+
+# Entity Framework migrations (optional)
+Migrations /
