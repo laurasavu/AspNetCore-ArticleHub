@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Collections.Generic;
 public class Article
 {
     [Key]
@@ -20,5 +20,5 @@ public class Article
     [ForeignKey("WriterId")]
     public virtual Writer Writer { get; set; }
 
-    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+   public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 }

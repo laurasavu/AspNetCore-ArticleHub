@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-
+﻿using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using Project.DTO;
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -10,23 +11,18 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // Configurarea rela?iilor
+        // Configurarea relațiilor
         modelBuilder.Entity<Writer>()
             .HasMany(w => w.Articles)
             .WithOne(a => a.Writer)
             .HasForeignKey(a => a.WriterId);
-
-        modelBuilder.Entity<Writer>()
-            .HasMany(w => w.Comments)
-            .WithOne(c => c.Writer)
-            .HasForeignKey(c => c.WriterId);
 
         modelBuilder.Entity<Article>()
             .HasMany(a => a.Comments)
             .WithOne(c => c.Article)
             .HasForeignKey(c => c.ArticleId);
 
-        // Ad?ugarea datelor de test
+        // Adăugarea datelor de test
         modelBuilder.Entity<Writer>().HasData(
             new Writer { Id = 1, Name = "John Doe", Email = "john.doe@example.com" },
             new Writer { Id = 2, Name = "Jane Smith", Email = "jane.smith@example.com" }

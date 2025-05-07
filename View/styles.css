@@ -1,0 +1,245 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+    color: #f1f1f1;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #ff0000, #ff8c00);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for writerss */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* writers container styling */
+.writers {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columns with space between */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    background: linear-gradient(135deg, #1a1a1d, #333);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .writers:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .writers h2 {
+        margin-top: 0;
+        color: #ff0000;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .writers p {
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+/* Articles section */
+.articles {
+    margin-top: 20px;
+}
+
+.article {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ff8c00;
+    background: linear-gradient(135deg, #333, #1a1a1d);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .article:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .article h4 {
+        margin: 0 0 10px;
+        color: #ff8c00;
+        font-size: 1.2rem;
+    }
+
+    .article p {
+        font-size: 0.95rem;
+        color: #ddd;
+    }
+
+/* Comments section */
+.comments {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #ff0000;
+}
+
+    .comments h5 {
+        margin: 0 0 10px;
+        color: #ff8c00;
+        font-size: 1rem;
+    }
+
+.comment {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* General button styling */
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+    /* Add Article button */
+    button[onclick^='showArticleForm'] {
+        background-color: #ff0000; /* Red */
+        color: white;
+    }
+
+        button[onclick^='showArticleForm']:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+    /* Edit Article button */
+    button[onclick^='editArticle'] {
+        background-color: #ff8c00; /* Orange */
+        color: white;
+    }
+
+        button[onclick^='editArticle']:hover {
+            background-color: #e67e00;
+            transform: scale(1.05);
+        }
+
+    /* Delete Article button */
+    button[onclick^='deleteArticle'] {
+        background-color: #ff0000; /* Red */
+        color: white;
+    }
+
+        button[onclick^='deleteArticle']:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+/* Form styling */
+.article-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ff8c00;
+    background: linear-gradient(135deg, #1a1a1d, #333);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+    .article-form h4 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        color: #ff8c00;
+    }
+
+    .article-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #ccc;
+    }
+
+    .article-form input[type='text'],
+    .article-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        background: #1a1a1d;
+        color: #f1f1f1;
+    }
+
+    .article-form textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .article-form button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+        .article-form button[type='submit'] {
+            background-color: #ff8c00; /* Orange */
+            color: white;
+        }
+
+            .article-form button[type='submit']:hover {
+                background-color: #e67e00;
+                transform: scale(1.05);
+            }
+
+        .article-form button[type='button'] {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+
+            .article-form button[type='button']:hover {
+                background-color: #cc0000;
+                transform: scale(1.05);
+            }
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #ff0000, #ff8c00);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}

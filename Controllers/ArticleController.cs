@@ -1,27 +1,34 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Project.DTO;
 
 [Route("api/[controller]")]
 [ApiController]
 public class ArticleController : ControllerBase
 {
     private readonly AppDbContext _context;
-
-    public ArticleController(AppDbContext context)
+    private readonly IMapper _mapper;
+    public ArticleController(AppDbContext context, IMapper mapper)
     {
+        _mapper = mapper;
         _context = context;
     }
 
     // GET: api/Article
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Article>>> GetArticles()
+    public async Task<ActionResult<IEnumerable<ArticleDTO>>> GetArticles()
     {
-        return await _context.Articles.Include(a => a.Writer).ToListAsync();
+        var articles = await _context.Articles
+            .Include(a => a.Writer)
+            .ToListAsync();
+
+        return _mapper.Map<List<ArticleDTO>>(articles);
     }
 
     // GET: api/Article/5
     [HttpGet("{id}")]
-    public async Task<ActionResult<Article>> GetArticle(long id)
+    public async Task<ActionResult<ArticleDTO>> GetArticle(long id)
     {
         var article = await _context.Articles
             .Include(a => a.Writer)
@@ -33,27 +40,38 @@ public class ArticleController : ControllerBase
             return NotFound();
         }
 
-        return article;
+        return _mapper.Map<ArticleDTO>(article);
     }
 
     // POST: api/Article
     [HttpPost]
-    public async Task<ActionResult<Article>> PostArticle(Article article)
+    public async Task<ActionResult<ArticleDTO>> PostArticle(ArticleDTO articleDto)
     {
+        var article = _mapper.Map<Article>(articleDto);
+
         _context.Articles.Add(article);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetArticle), new { id = article.Id }, article);
+        articleDto.Id = article.Id;
+        return CreatedAtAction(nameof(GetArticle), new { id = article.Id }, articleDto);
     }
 
     // PUT: api/Article/5
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutArticle(long id, Article article)
+    public async Task<IActionResult> PutArticle(long id, ArticleDTO articleDto)
     {
-        if (id != article.Id)
+        if (id != articleDto.Id)
         {
             return BadRequest();
         }
+
+        var article = await _context.Articles.FindAsync(id);
+        if (article == null)
+        {
+            return NotFound();
+        }
+
+        _mapper.Map(articleDto, article);
 
         _context.Entry(article).State = EntityState.Modified;
 

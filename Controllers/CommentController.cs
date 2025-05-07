@@ -1,30 +1,37 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Project.DTO;
 
 [Route("api/[controller]")]
 [ApiController]
 public class CommentController : ControllerBase
 {
     private readonly AppDbContext _context;
-
-    public CommentController(AppDbContext context)
+    private readonly IMapper _mapper;
+    public CommentController(AppDbContext context,IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
+
+   
 
     // GET: api/Comment
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
+    public async Task<ActionResult<IEnumerable<CommentDTO>>> GetComments()
     {
-        return await _context.Comments
+        var comments = await _context.Comments
             .Include(c => c.Writer)
             .Include(c => c.Article)
             .ToListAsync();
+
+        return Ok(_mapper.Map<IEnumerable<CommentDTO>>(comments));
     }
 
     // GET: api/Comment/5
     [HttpGet("{id}")]
-    public async Task<ActionResult<Comment>> GetComment(long id)
+    public async Task<ActionResult<CommentDTO>> GetComment(long id)
     {
         var comment = await _context.Comments
             .Include(c => c.Writer)
@@ -36,27 +43,38 @@ public class CommentController : ControllerBase
             return NotFound();
         }
 
-        return comment;
+        return Ok(_mapper.Map<CommentDTO>(comment));
     }
 
     // POST: api/Comment
     [HttpPost]
-    public async Task<ActionResult<Comment>> PostComment(Comment comment)
+    public async Task<ActionResult<CommentDTO>> PostComment(CommentDTO commentDto)
     {
+        var comment = _mapper.Map<Comment>(commentDto);
+
         _context.Comments.Add(comment);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetComment), new { id = comment.Id }, comment);
+        var createdCommentDto = _mapper.Map<CommentDTO>(comment);
+        return CreatedAtAction(nameof(GetComment), new { id = comment.Id }, createdCommentDto);
     }
 
     // PUT: api/Comment/5
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutComment(long id, Comment comment)
+    public async Task<IActionResult> PutComment(long id, CommentDTO commentDto)
     {
-        if (id != comment.Id)
+        if (id != commentDto.Id)
         {
             return BadRequest();
         }
+
+        var comment = await _context.Comments.FindAsync(id);
+        if (comment == null)
+        {
+            return NotFound();
+        }
+
+        _mapper.Map(commentDto, comment);
 
         _context.Entry(comment).State = EntityState.Modified;
 
@@ -100,3 +118,4 @@ public class CommentController : ControllerBase
         return _context.Comments.Any(e => e.Id == id);
     }
 }
+

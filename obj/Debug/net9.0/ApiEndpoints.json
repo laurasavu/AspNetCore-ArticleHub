@@ -1,23 +1,5 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
-    "RelativePath": "",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "ArticleController",
     "Method": "GetArticles",
     "RelativePath": "api/Article",
@@ -27,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Article, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.DTO.ArticleDTO, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,14 +28,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "article",
-        "Type": "Article",
+        "Name": "articleDto",
+        "Type": "Project.DTO.ArticleDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Article",
+        "Type": "Project.DTO.ArticleDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -79,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Article",
+        "Type": "Project.DTO.ArticleDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -103,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "article",
-        "Type": "Article",
+        "Name": "articleDto",
+        "Type": "Project.DTO.ArticleDTO",
         "IsRequired": true
       }
     ],
@@ -136,7 +118,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Comment, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.DTO.CommentDTO, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -155,14 +137,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "comment",
-        "Type": "Comment",
+        "Name": "commentDto",
+        "Type": "Project.DTO.CommentDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Comment",
+        "Type": "Project.DTO.CommentDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -188,7 +170,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Comment",
+        "Type": "Project.DTO.CommentDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -212,8 +194,8 @@
         "IsRequired": true
       },
       {
-        "Name": "comment",
-        "Type": "Comment",
+        "Name": "commentDto",
+        "Type": "Project.DTO.CommentDTO",
         "IsRequired": true
       }
     ],
@@ -245,7 +227,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Writer, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.DTO.WriterDTO, Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -264,14 +246,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "writer",
-        "Type": "Writer",
+        "Name": "writerDTO",
+        "Type": "Project.DTO.WriterDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Writer",
+        "Type": "Project.DTO.WriterDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -297,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Writer",
+        "Type": "Project.DTO.WriterDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -321,8 +303,8 @@
         "IsRequired": true
       },
       {
-        "Name": "writer",
-        "Type": "Writer",
+        "Name": "writerDTO",
+        "Type": "Project.DTO.WriterDTO",
         "IsRequired": true
       }
     ],

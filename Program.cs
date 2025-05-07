@@ -1,21 +1,39 @@
 using Microsoft.EntityFrameworkCore;
-using System;
+using Project.DTO;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Project
+    
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
+            // Enable CORS to allow communication with the frontend
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.AllowAnyMethod()
+                          .AllowAnyHeader();
+                          
+                });
+            });
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-      options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                  options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddControllers();
+            var app = builder.Build();
 
+            // Apply the CORS policy
+            app.UseCors("AllowFrontend");
 
-builder.Services.AddControllers();
-
-var app = builder.Build();
-
-app.UseRouting();
-
-app.MapControllers();
-
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
+            app.UseRouting();
+            app.MapControllers();
+            app.UseAuthorization();
+            app.Run();
+        }
+    }
+}
