@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\CSS\\style-responsive.css",
+      "PackagePath": "staticwebassets\\CSS\\style-responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\CSS\\styles.css",
+      "PackagePath": "staticwebassets\\CSS\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\CSS\\stylesO.css",
+      "PackagePath": "staticwebassets\\CSS\\stylesO.css"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\JS\\index.js",
+      "PackagePath": "staticwebassets\\JS\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\JS\\indexO.js",
+      "PackagePath": "staticwebassets\\JS\\indexO.js"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Project.props",
+      "PackagePath": "build\\Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Project.props",
+      "PackagePath": "buildMultiTargeting\\Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Project.props",
+      "PackagePath": "buildTransitive\\Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

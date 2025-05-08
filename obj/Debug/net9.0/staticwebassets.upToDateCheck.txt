@@ -1,0 +1,12 @@
+C:\Users\Laptop 46\Project\wwwroot\CSS\styles.css
+C:\Users\Laptop 46\Project\wwwroot\CSS\style-responsive.css
+C:\Users\Laptop 46\Project\wwwroot\index.html
+C:\Users\Laptop 46\Project\wwwroot\JS\indexO.js
+C:\Users\Laptop 46\Project\wwwroot\JS\index.js
+C:\Users\Laptop 46\Project\wwwroot\CSS\stylesO.css
+wwwroot\CSS\style-responsive.css
+wwwroot\CSS\styles.css
+wwwroot\CSS\stylesO.css
+wwwroot\index.html
+wwwroot\JS\index.js
+wwwroot\JS\indexO.js

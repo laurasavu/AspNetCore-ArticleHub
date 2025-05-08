@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using Project.DTO;
+
+
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -8,7 +10,7 @@ public class AppDbContext : DbContext
     public DbSet<Article> Articles { get; set; }
     public DbSet<Writer> Writers { get; set; }
     public DbSet<Comment> Comments { get; set; }
-
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Configurarea relațiilor
