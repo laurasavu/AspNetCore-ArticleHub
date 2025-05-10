@@ -1,80 +1,33 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa; /* Light gray background */
-        color: #212529; /* Dark text color */
-    }
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
 
-    /* Navbar styling */
-    #navbar {
-        background-color: #343a40; /* Dark background */
-        color: #fff; /* White text */
-        padding: 10px 20px;
-        
-        font-size: 18px;
-        font-weight: bold;
-    }
+.search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
 
-    /* Heading styling */
-    h1 {
-        text-align: center;
-        margin: 20px 0;
-        font-size: 28px;
-        color: #495057; /* Slightly lighter dark color */
-    }
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-    /* Table container styling */
-    #table {
-        margin: 20px auto;
-        width: 90%;
-        max-width: 1200px;
-        background-color: #fff; /* White background */
-        border: 1px solid #dee2e6; /* Light border */
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        padding: 20px;
-    }
-
-    /* Table styling */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 16px;
-        color: #333;
-    }
-
-    table th, table td {
-        border: 1px solid #dee2e6; /* Light border */
-        padding: 10px;
-        text-align: left;
-    }
-
-    table th {
-        background-color: #e9ecef; /* Light gray header background */
-        font-weight: bold;
-    }
-
-    table tr:nth-child(even) {
-        background-color: #f8f9fa; /* Alternating row color */
-    }
-
-    /* Responsive styling */
-    @media (max-width: 768px) {
-        #table {
-            width: 100%;
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        table th, table td {
-            font-size: 14px;
-            padding: 8px;
-        }
-    }
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }

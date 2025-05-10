@@ -452,9 +452,10 @@ C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.MvcApplicationPartsAssemblyI
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.sourcelink.json
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\scopedcss\bundle\Project.styles.css
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\5izrihdnk1-8bl3iibjul.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\4ks7k8bnsn-spo0x37637.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\4ks7k8bnsn-y2eoqawmlo.gz
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\qd0bxtdgce-twij6pbkh1.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\bswnttezdw-ru8mzy2543.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\bswnttezdw-dkg1apkof7.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\0ifnqk0t7w-lfac72241y.gz
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\dz0rd38rr9-t0yf4hjmke.gz
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.development.json
@@ -465,11 +466,10 @@ C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets\msbuild.build.Projec
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Project.props
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Project.props
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.csproj.Up2Date
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.dll
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\refint\Project.dll
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.pdb
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.genruntimeconfig.cache
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\ref\Project.dll
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\o692qiyt9g-u0bp58rhmz.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

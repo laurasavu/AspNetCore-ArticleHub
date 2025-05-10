@@ -13,16 +13,16 @@
       "PackagePath": "staticwebassets\\CSS\\stylesO.css"
     },
     {
-      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\JS\\index.js",
-      "PackagePath": "staticwebassets\\JS\\index.js"
-    },
-    {
       "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\JS\\indexO.js",
       "PackagePath": "staticwebassets\\JS\\indexO.js"
     },
     {
       "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\index.js",
+      "PackagePath": "staticwebassets\\index.js"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

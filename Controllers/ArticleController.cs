@@ -114,4 +114,14 @@ public class ArticleController : ControllerBase
     {
         return _context.Articles.Any(e => e.Id == id);
     }
+
+    // GET: api/Article/Titles
+    [HttpGet("Titles")]
+    public async Task<ActionResult<IEnumerable<string>>> GetArticleTitles()
+    {
+        var titles = await _context.Articles
+            .Select(a => a.Title)
+            .ToListAsync();
+        return Ok(titles);
+    }
 }

@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>spo0x37637</Fingerprint>
-      <Integrity>4OVTtkNfmT21IfeoD3iQwOhQm7IclaFMV41Mxv9q8Zk=</Integrity>
+      <Fingerprint>y2eoqawmlo</Fingerprint>
+      <Integrity>tmD5XNxHoBWphZ83ACxYWVvLHi/ZIxzH4aZcILek7lA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\styles.css'))</OriginalItemSpec>
@@ -66,29 +66,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ru8mzy2543</Fingerprint>
-      <Integrity>UwEgXNNQ+yZzLf4QeOTDyz/UNBzt9YF38KLmEs/J9Pw=</Integrity>
+      <Fingerprint>dkg1apkof7</Fingerprint>
+      <Integrity>HZhp159vgOx+N1nECOoPtM7yhkXVDG66l8wbs8pbfCo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\index.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Project</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Project</BasePath>
-      <RelativePath>JS/index.js</RelativePath>
+      <RelativePath>index.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u0bp58rhmz</Fingerprint>
-      <Integrity>8sZ9qNLD9+3FOQotylAmIBmpvNrGrQ/frD0cVib3BFc=</Integrity>
+      <Fingerprint>lfac72241y</Fingerprint>
+      <Integrity>L3EO8vkEE8HCQesrPAKbRIi8MrqDt/h9byx4h6JtGhY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\index.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\indexO.js'))">
       <SourceType>Package</SourceType>

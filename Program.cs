@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Project.DTO;
 using Microsoft.Extensions.FileProviders;
-
+using Microsoft.EntityFrameworkCore.Diagnostics;
 namespace Project
-    
+ 
 {
     public static class Program
     {
@@ -14,15 +14,20 @@ namespace Project
             builder.Host.UseContentRoot(Directory.GetCurrentDirectory());
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-            
+
 
             builder.Services.AddDbContext<AppDbContext>(options =>
-                  options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            {
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.ConfigureWarnings(w => w.Ignore(RelationalEventId.MultipleCollectionIncludeWarning));
+            });
+
+
             builder.Services.AddControllers();
            
 
             var app = builder.Build(); 
-            //
+            
             app.UseDefaultFiles();
             app.UseStaticFiles(new StaticFileOptions
             {

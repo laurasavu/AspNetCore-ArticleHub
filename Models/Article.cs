@@ -8,17 +8,17 @@ public class Article
 
     [Required]
     [StringLength(200)]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     [Required]
-    public string Content { get; set; }
+    public string? Content { get; set; }
 
     
     public long WriterId { get; set; }
 
   
     [ForeignKey("WriterId")]
-    public virtual Writer Writer { get; set; }
+    public virtual Writer? Writer { get; set; }
 
    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 }
