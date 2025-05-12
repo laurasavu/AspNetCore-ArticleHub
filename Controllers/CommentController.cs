@@ -117,5 +117,20 @@ public class CommentController : ControllerBase
     {
         return _context.Comments.Any(e => e.Id == id);
     }
-}
+
+    [HttpGet("Article/{articleId}/Comments/Content")]
+    public async Task<ActionResult<IEnumerable<string>>> GetCommentContentsByArticleId(long articleId)
+    {
+        var commentContents = await _context.Comments
+            .Where(c => c.ArticleId == articleId)
+            .Select(c => c.Content)
+            .ToListAsync();
+
+        if (commentContents == null || !commentContents.Any())
+        {
+            return NotFound(new { Message = $"No comments found for ArticleId {articleId}" });
+        }
+
+        return Ok(commentContents);
+    } }
 

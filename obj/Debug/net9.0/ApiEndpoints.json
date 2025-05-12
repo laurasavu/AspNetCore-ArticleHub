@@ -129,6 +129,26 @@
     ]
   },
   {
+    "ContainingType": "ArticleController",
+    "Method": "GetArticleTitlesAndWriters",
+    "RelativePath": "api/Article/TitlesAndWriters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "CommentController",
     "Method": "GetComments",
     "RelativePath": "api/Comment",
@@ -236,6 +256,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CommentController",
+    "Method": "GetCommentContentsByArticleId",
+    "RelativePath": "api/Comment/Article/{articleId}/Comments/Content",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "articleId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "WriterController",

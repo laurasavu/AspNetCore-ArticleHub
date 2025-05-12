@@ -1,4 +1,5 @@
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -22,7 +23,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
 }
-
+  
 .item {
     background: white;
     padding: 15px;
@@ -30,4 +31,7 @@ body {
     width: 200px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
+} 
+.grid .article-title:hover {
+        text-decoration: underline;
+    }

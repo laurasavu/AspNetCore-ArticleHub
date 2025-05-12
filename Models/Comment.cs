@@ -4,16 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 public class Comment
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public long Id { get; set; }
 
     [Required]
     [StringLength(500)]
-    public string Content { get; set; }
+    public string Content { get; set; } = string.Empty;
 
     public long WriterId { get; set; }
     public long ArticleId { get; set; }
 
-    // Navigation properties
+   
     [ForeignKey("WriterId")]
     public virtual Writer Writer { get; set; }
 

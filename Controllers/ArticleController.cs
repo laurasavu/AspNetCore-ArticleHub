@@ -124,4 +124,22 @@ public class ArticleController : ControllerBase
             .ToListAsync();
         return Ok(titles);
     }
+
+    // GET: api/Article/TitlesAndWriters
+    [HttpGet("TitlesAndWriters")]
+    public async Task<ActionResult<IEnumerable<object>>> GetArticleTitlesAndWriters()
+    {
+        var TitlesAndWriters = await _context.Articles
+            .Include(a => a.Writer)
+            .Select(a => new
+            {
+                ArticleId = a.Id,
+                Title = a.Title,
+                WriterName = a.Writer != null ? a.Writer.Name : "Unknown",
+                WriterId=a.WriterId
+            })
+            .ToListAsync();
+
+        return Ok(TitlesAndWriters);
+    }
 }
