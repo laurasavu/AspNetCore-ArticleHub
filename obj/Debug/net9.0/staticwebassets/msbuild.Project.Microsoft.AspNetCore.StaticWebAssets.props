@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vzdtbidvvd</Fingerprint>
-      <Integrity>5RCxozQqMXWmIh7KTM56qUYayVRdEQVFScucir627gY=</Integrity>
+      <Fingerprint>mbzg61gdgv</Fingerprint>
+      <Integrity>Lj+ZZekYKjjsFfIzROqu4laFBvuTXvAQC1SO1s7Oizs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\styles.css'))</OriginalItemSpec>
@@ -72,6 +72,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\stylesO.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\viewArticle.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Project</BasePath>
+      <RelativePath>CSS/viewArticle.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2t4t2p2fx0</Fingerprint>
+      <Integrity>ahzJ1JuvZUmdFOfQ6AUDJKUHScYHkmiD6O5ob0cwhzU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\viewArticle.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EditArticle.html'))">
       <SourceType>Package</SourceType>
       <SourceId>Project</SourceId>
@@ -84,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1axsyncd5a</Fingerprint>
-      <Integrity>ebUbdXqkqQxCsfViYOQEOQYN8dpp3bTs56ZAuamZo5E=</Integrity>
+      <Fingerprint>795mozo68p</Fingerprint>
+      <Integrity>5bcp0FNy3aqM//lCAxmDeThzeLsuUlzQJYHPRR9OPJo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EditArticle.html'))</OriginalItemSpec>
@@ -120,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vb4kbtd75c</Fingerprint>
-      <Integrity>62E5f+ckJr0yUWMlwxXyLLV1t3o10Ndvj+PJOq4YJEs=</Integrity>
+      <Fingerprint>j02urjygz8</Fingerprint>
+      <Integrity>s6z6QzELo+JRHVg/dyJVjpq8Pxza+J0ue0OUJ5gJObk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
@@ -174,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ehhyvmqv9p</Fingerprint>
-      <Integrity>AoRr0EpeoUtnOfjkRAMq8WSr/zcsvumjdnDq1Cjdfho=</Integrity>
+      <Fingerprint>sv2bagifog</Fingerprint>
+      <Integrity>WE3f9XN8ZBFZ8GR5NqTkGX6gXM7EEc8QkYbjWItK8bg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\viewArticle.js'))</OriginalItemSpec>
@@ -192,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ptvemx8inj</Fingerprint>
-      <Integrity>nZLp76JvocEqigBhVrXLV8EszkXWLF1K0hRjyyEIp4U=</Integrity>
+      <Fingerprint>wxog20ikc4</Fingerprint>
+      <Integrity>vLs4rBbsn36DQrt6071itSINTQOSfMeUTlPFK4FYWVU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\viewArticle.html'))</OriginalItemSpec>

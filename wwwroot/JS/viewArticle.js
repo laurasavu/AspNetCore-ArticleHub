@@ -31,28 +31,37 @@
             // Fetch comments separately using articleId
             const commentsResponse = await fetch(`/api/Comment/Article/${articleId}/Comments/Content`);
 
-            if (!commentsResponse.ok) {
-                throw new Error("Failed to fetch comments.");
-            }
-
             const commentsData = await commentsResponse.json();
 
             // Handle comments
             const commentsContainer = document.getElementById("articleComments");
             commentsContainer.innerHTML = ""; // Clear any existing comments
-
+          
             if (commentsData && Array.isArray(commentsData)) {
                 if (commentsData.length > 0) {
-                    commentsData.forEach((comment) => {
-                        const commentElement = document.createElement("div");
-                        commentElement.classList.add("comment");
+                    if (commentsData && Array.isArray(commentsData)) {
+                        if (commentsData.length > 0) {
+                            // Add the heading before listing comments
+                            const heading = document.createElement("h2");
+                            heading.textContent = "Comments on this Article";
+                            commentsContainer.appendChild(heading);
 
-                        const textElement = document.createElement("p");
-                    
-                        textElement.textContent = comment;
-                        commentElement.appendChild(textElement);
-                        commentsContainer.appendChild(commentElement);
-                    });
+                            commentsData.forEach((comment) => {
+                                const commentElement = document.createElement("div");
+                                commentElement.classList.add("comment");
+
+                                const textElement = document.createElement("p");
+
+                                textElement.textContent = comment;
+                                commentElement.appendChild(textElement);
+                                commentsContainer.appendChild(commentElement);
+                            });
+                        } else {
+                            commentsContainer.innerHTML = "<p>No comments available.</p>";
+                        }
+                    } else {
+                        commentsContainer.innerHTML = "<p>No comments available.</p>";
+                    }
                 } else {
                     commentsContainer.innerHTML = "<p>No comments available.</p>";
                 }

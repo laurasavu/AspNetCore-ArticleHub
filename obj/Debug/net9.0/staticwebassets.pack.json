@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\CSS\\stylesO.css"
     },
     {
+      "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\CSS\\viewArticle.css",
+      "PackagePath": "staticwebassets\\CSS\\viewArticle.css"
+    },
+    {
       "Id": "C:\\Users\\Laptop 46\\Project\\wwwroot\\EditArticle.html",
       "PackagePath": "staticwebassets\\EditArticle.html"
     },

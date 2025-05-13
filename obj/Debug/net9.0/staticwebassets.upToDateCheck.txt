@@ -5,6 +5,7 @@ C:\Users\Laptop 46\Project\wwwroot\EditArticle.html
 C:\Users\Laptop 46\Project\wwwroot\index.html
 C:\Users\Laptop 46\Project\wwwroot\JS\viewArticle.js
 C:\Users\Laptop 46\Project\wwwroot\JS\indexO.js
+C:\Users\Laptop 46\Project\wwwroot\CSS\viewArticle.css
 C:\Users\Laptop 46\Project\wwwroot\viewArticle.html
 C:\Users\Laptop 46\Project\wwwroot\CSS\stylesO.css
 C:\Users\Laptop 46\Project\wwwroot\EditArticle.js
@@ -13,6 +14,7 @@ wwwroot\CSS\EditArticle.css
 wwwroot\CSS\style-responsive.css
 wwwroot\CSS\styles.css
 wwwroot\CSS\stylesO.css
+wwwroot\CSS\viewArticle.css
 wwwroot\EditArticle.html
 wwwroot\EditArticle.js
 wwwroot\index.html

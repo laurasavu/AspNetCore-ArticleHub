@@ -13,15 +13,24 @@
 <body>
 
     <div id="navbar"></div>
-    <div class="container">
-        <h1>Articles and Journals</h1>
-        <input class="search-bar" type="text" placeholder="Search...">
-
-        <div class="grid">
-           
+    
+        <div class="banner">
+            <img class="banner-img" src="https://www.eurocontrol.int/sites/default/files/styles/16_9_1920x1080/public/2025-01/banner-innovation-hub.jpg?h=673214ff&itok=_xv02clk" />
+            <div class="bannerText">
+                <h1 class="h1">Articles and Journals</h1>
+                <p>Search for peer-reviewed journal articles</p>
+            </div>
         </div>
-    </div>
-</body>
+
+        <div class="container">
+            <label for="search-bar"class="label">Find articles with these terms:</label>
+            <input id="search-bar" class="search-bar" type="text" placeholder="Search..." />
+
+            <div class="grid"></div>
+            <div class="button-container">
+                <button id="add-article-button">Add Article</button>
+            </div>
+        </div>
 
 </body>
 </html>
