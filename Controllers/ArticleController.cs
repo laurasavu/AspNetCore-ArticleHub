@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project.DTO;
@@ -95,6 +96,7 @@ public class ArticleController : ControllerBase
     }
 
     // DELETE: api/Article/5
+   [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteArticle(long id)
     {

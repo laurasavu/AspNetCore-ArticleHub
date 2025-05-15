@@ -98,7 +98,10 @@ const deleteArticle = async (articleId) => {
         const response = await fetch(`http://localhost:5096/api/Article/${articleId}`, {
             method: "DELETE"
         });
-
+        if (response.status === 401) {
+            alert("You do not have permission to delete this article.");
+            return;
+        }
         if (!response.ok) {
             throw new Error(`Failed to delete article. HTTP status: ${response.status}`);
         }

@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\IntegrationTests\Controllers\" />
-    <Folder Include="NewFolder\IntegrationTests\Database\" />
-    <Folder Include="NewFolder\UnitTests\Models\" />
+    <Folder Include="Tests\IntegrationTests\Controllers\" />
+    <Folder Include="Tests\IntegrationTests\Database\" />
+    <Folder Include="Tests\UnitTests\Models\" />
   </ItemGroup>
 
 </Project>

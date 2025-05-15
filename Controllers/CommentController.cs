@@ -15,8 +15,6 @@ public class CommentController : ControllerBase
         _mapper = mapper;
     }
 
-   
-
     // GET: api/Comment
     [HttpGet]
     public async Task<ActionResult<IEnumerable<CommentDTO>>> GetComments()

@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Project.DTO;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Project.Auth;
+using Microsoft.AspNetCore.Authentication;
 namespace Project
  
 {
@@ -21,6 +23,8 @@ namespace Project
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
                 options.ConfigureWarnings(w => w.Ignore(RelationalEventId.MultipleCollectionIncludeWarning));
             });
+            builder.Services.AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 
 
             builder.Services.AddControllers();
@@ -35,8 +39,10 @@ namespace Project
                  Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
             });
               app.UseRouting();
-          
-           
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.MapControllers();
           
             
