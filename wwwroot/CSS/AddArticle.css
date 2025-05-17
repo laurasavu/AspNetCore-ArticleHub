@@ -1,0 +1,70 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+}
+
+.form-control {
+    width: 90%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+}
+
+    .btn:disabled {
+        background: #aaa;
+    }
+
+.alert {
+    padding: 1em;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    margin-top: 1em;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.9em;
+}
+
+label {
+ 
+        display: block;
+        margin-bottom: 0.2em;
+        margin-left: 5%;
+    }
+
+
+.p {
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 1em;
+    font-weight: bold;
+    font-size:large;
+}
+
+
+#content {
+    min-height: 200px;
+    width: 90%;
+  
+    resize: vertical;
+  
+}
+    

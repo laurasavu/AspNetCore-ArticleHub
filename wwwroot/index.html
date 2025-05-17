@@ -4,35 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
     <link rel="stylesheet" href="/CSS/styles.css" />
- 
+
     <script src="/index.js" defer></script>
 
 </head>
 <body>
 
-    <div id="navbar"></div>
-    
-        <div class="banner">
-            <img class="banner-img" src="https://www.eurocontrol.int/sites/default/files/styles/16_9_1920x1080/public/2025-01/banner-innovation-hub.jpg?h=673214ff&itok=_xv02clk" />
-            <div class="bannerText">
-                <h1 class="h1">Articles and Journals</h1>
-                <p>Search for peer-reviewed journal articles</p>
-            </div>
-        </div>
+    <div id="navbar">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+                <li class="navbar-item">
+                    <a href="addArticle.html" class="navbar-link">Add Article</a>
+                </li>
+                <li class="navbar-item"><a href="/" class="navbar-link">My account</a></li>
+                <li class="navbar-item"><a href="/" class="navbar-link">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="container">
-            <label for="search-bar"class="label">Find articles with these terms:</label>
-            <input id="search-bar" class="search-bar" type="text" placeholder="Search..." />
-
-            <div class="grid"></div>
-            <div class="button-container">
-                <button id="add-article-button">Add Article</button>
-            </div>
+    <div class="banner">
+        <img class="banner-img" src="https://www.eurocontrol.int/sites/default/files/styles/16_9_1920x1080/public/2025-01/banner-innovation-hub.jpg?h=673214ff&itok=_xv02clk" />
+        <div class="bannerText">
+            <h1 class="h1">Articles and Journals</h1>
+            <p>Search for peer-reviewed journal articles</p>
         </div>
+    </div>
+
+    <div class="container">
+        <label for="search-bar" class="label">Find articles with these terms:</label>
+        <input id="search-bar" class="search-bar" type="text" placeholder="Search..." />
+
+        <div class="grid"></div>
+       
+    </div>
 
 </body>
 </html>
-
-

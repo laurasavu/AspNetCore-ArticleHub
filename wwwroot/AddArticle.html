@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publish an article</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/CSS/AddArticle.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+
+    <script src="/JS/AddArticle.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+                <li class="navbar-item">
+                    <a href="addArticle.html" class="navbar-link">Add Article</a>
+                </li>
+                <li class="navbar-item"><a href="/account" class="navbar-link">My account</a></li>
+                <li class="navbar-item"><a href="/signin" class="navbar-link">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="banner">
+        <img class="banner-img" src="https://www.eurocontrol.int/sites/default/files/styles/16_9_1920x1080/public/2025-01/banner-innovation-hub.jpg?h=673214ff&itok=_xv02clk" />
+        <div class="bannerText">
+            <h1 class="h1">Articles and Journals</h1>
+            <p>Publish your research</p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="p">Publish an article</p>
+    
+        <form id="articleForm" novalidate>
+            <div>
+                <label for="title">Title:</label>
+                <input id="title" name="title" class="form-control" type="text" required>
+                <div id="titleError" class="error"></div>
+            </div>
+            <div>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" class="form-control" required></textarea>
+                <div id="contentError" class="error"></div>
+            </div>
+            <div>
+                <label for="writerName">Writer Name:</label>
+
+                <select id="writerDropdown" name="writerDropdown" class="form-control" required>
+                    <option value="" disabled selected>Select a writer</option>
+                    <!-- Writer options will be populated dynamically by AddArticle.js -->
+                </select>
+                <div id="writerIdError" class="error"></div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="successMsg" class="alert" style="display:none;">
+            Article submitted successfully!
+        </div>
+
+    </div>
+</body>
+</html>
+

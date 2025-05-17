@@ -96,7 +96,7 @@ public class ArticleController : ControllerBase
     }
 
     // DELETE: api/Article/5
-   [Authorize]
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteArticle(long id)
     {
