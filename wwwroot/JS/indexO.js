@@ -5,7 +5,7 @@
         initializeApp(container);
     });
 
-    
+    //acest js este ca model
 
 // Update fetchData to handle errors more gracefully and log specific issues
 const fetchData = async () => {

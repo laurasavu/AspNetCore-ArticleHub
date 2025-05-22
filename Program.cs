@@ -1,11 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using Project.DTO;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.EntityFrameworkCore.Diagnostics;
-using Project.Auth;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.FileProviders;
+using Project.Auth;
+using Project.DTO;
 namespace Project
- 
+
 {
     public static class Program
     {
@@ -28,25 +28,25 @@ namespace Project
 
 
             builder.Services.AddControllers();
-           
 
-            var app = builder.Build(); 
-            
+
+            var app = builder.Build();
+
             app.UseDefaultFiles();
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
                  Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
             });
-              app.UseRouting();
+            app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
-          
-            
-            
+
+
+
             app.Run();
         }
     }
