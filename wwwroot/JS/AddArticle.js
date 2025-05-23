@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (response.ok) {
                             form.reset();
                             successMsg.style.display = 'block';
+                            setTimeout(() => {
+                                window.location.href = "index.html";
+                            }, 1000);
                         } else {
                             response.text().then(msg => alert('Error: ' + msg));
                         }
