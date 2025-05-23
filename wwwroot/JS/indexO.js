@@ -1,11 +1,18 @@
-﻿    document.addEventListener("DOMContentLoaded", () => {
+﻿
+//acest js este folost ca model nu face parte din proiect
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("content");
 
         // Initialize the app
         initializeApp(container);
     });
 
-    //acest js este ca model
+    
 
 // Update fetchData to handle errors more gracefully and log specific issues
 const fetchData = async () => {

@@ -1,4 +1,11 @@
-﻿/* General body styling */
+﻿/* General body styling 
+
+
+Document ca model nu face pare din proiect
+
+
+
+*/
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -8,7 +15,7 @@ body {
     color: #f1f1f1;
 }
 
-/*Document ca model
+/*
     Header styling */
 header {
     background: linear-gradient(90deg, #ff0000, #ff8c00);

@@ -47,36 +47,36 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-                if (valid) {
-                    const article = {
-                        title: title.value.trim(),
-                        content: content.value.trim(),
-                        writerId: writerDropdown.value,
-                        comments: []
-                    };
+        if (valid) {
+            const article = {
+                title: title.value.trim(),
+                content: content.value.trim(),
+                writerId: writerDropdown.value,
+                comments: []
+            };
 
-                    fetch('http://localhost:5096/api/Article', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(article)
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            form.reset();
-                            successMsg.style.display = 'block';
-                            setTimeout(() => {
-                                window.location.href = "index.html";
-                            }, 1000);
-                        } else {
-                            response.text().then(msg => alert('Error: ' + msg));
-                        }
-                    })
-                    .catch(error => {
-                        alert('Network error: ' + error);
-                    });
-                }
-     
+            fetch('http://localhost:5096/api/Article', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(article)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        form.reset();
+                        successMsg.style.display = 'block';
+                        setTimeout(() => {
+                            window.location.href = "index.html";
+                        }, 1000);
+                    } else {
+                        response.text().then(msg => alert('Error: ' + msg));
+                    }
+                })
+                .catch(error => {
+                    alert('Network error: ' + error);
+                });
+        }
+
     });
 });

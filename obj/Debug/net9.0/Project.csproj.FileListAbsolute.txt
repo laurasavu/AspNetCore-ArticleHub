@@ -553,9 +553,9 @@ C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.pdb
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\Project.genruntimeconfig.cache
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\ref\Project.dll
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\qd0bxtdgce-pu1we7ktme.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\dz0rd38rr9-a3ckohetk7.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\eg0bwpufz3-d9rotutppd.gz
-C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\thwan9lyc0-2cj49ynmbe.gz
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\v6j6e444ty-0l5798bzx8.gz
 C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\4ks7k8bnsn-xmsyla5z4i.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\eg0bwpufz3-gw3n2vk7ya.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\qd0bxtdgce-i8xcbf46x2.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\thwan9lyc0-k9pnh4bdcj.gz
+C:\Users\Laptop 46\Project\obj\Debug\net9.0\compressed\dz0rd38rr9-ng959fsnlv.gz
