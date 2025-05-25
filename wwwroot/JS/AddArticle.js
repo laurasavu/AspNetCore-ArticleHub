@@ -8,7 +8,7 @@ const successMsg = document.getElementById('successMsg');
 
 document.addEventListener('DOMContentLoaded', function () {
     const writerDropdown = document.getElementById('writerDropdown');
-    fetch('http://localhost:5096/api/Writer')
+        fetch('/api/Writer')
         .then(response => response.json())
         .then(data => {
             writerDropdown.innerHTML = '<option value="">Select writer</option>';
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
         .catch(error => {
-            if (writerDropdown) {
-                writerDropdown.innerHTML = '<option value="">Failed to load writers</option>';
-            }
+           
+            writerDropdown.innerHTML = '<option value="">Failed to load writers</option>';
+            
         });
 
     form.addEventListener('submit', function (e) {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 comments: []
             };
 
-            fetch('http://localhost:5096/api/Article', {
+            fetch('/api/Article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

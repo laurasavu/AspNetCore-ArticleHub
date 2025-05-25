@@ -1,3 +1,7 @@
+
+using Project.Models;
+
+
 namespace Project.DTO
 {
     public class CommentDTO

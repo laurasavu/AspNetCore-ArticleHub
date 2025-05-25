@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using Project.DTO;
-
+using Project.Models;
 
 public class AppDbContext : DbContext
 {

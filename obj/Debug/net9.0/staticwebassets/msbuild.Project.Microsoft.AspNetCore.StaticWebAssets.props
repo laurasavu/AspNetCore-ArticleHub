@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k9pnh4bdcj</Fingerprint>
-      <Integrity>WO+5BxUnhk2O8qFAPh70vsOFpfPMwzRxUSHsdPu3S8o=</Integrity>
+      <Fingerprint>fdvc0z0ady</Fingerprint>
+      <Integrity>Leq+9fpfsNK/qUcJPsKSet7jHpfErXjxMFYEZyHvKY0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\AddArticle.js'))</OriginalItemSpec>
@@ -246,8 +246,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sv2bagifog</Fingerprint>
-      <Integrity>WE3f9XN8ZBFZ8GR5NqTkGX6gXM7EEc8QkYbjWItK8bg=</Integrity>
+      <Fingerprint>jfrmaqlq8o</Fingerprint>
+      <Integrity>X/ZL2CYHBVsm/cq2DgWBQlCrMkd66RPCN2nbbyQ7t1A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JS\viewArticle.js'))</OriginalItemSpec>

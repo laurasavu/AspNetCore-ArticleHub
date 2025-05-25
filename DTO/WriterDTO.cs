@@ -1,3 +1,6 @@
+using Project.Models;
+
+
 using FluentValidation;
 
 namespace Project.DTO

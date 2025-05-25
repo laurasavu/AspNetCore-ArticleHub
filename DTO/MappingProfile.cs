@@ -1,3 +1,6 @@
+
+using Project.Models;
+
 using AutoMapper;
 namespace Project.DTO { 
   public class MappingProfile : Profile

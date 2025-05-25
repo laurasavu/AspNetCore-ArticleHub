@@ -36,34 +36,21 @@
             const commentsContainer = document.getElementById("articleComments");
             commentsContainer.innerHTML = ""; 
           
-            if (commentsData && Array.isArray(commentsData)) {
-                if (commentsData.length > 0) {
-                    if (commentsData && Array.isArray(commentsData)) {
-                        if (commentsData.length > 0) {
-                        
-                            const heading = document.createElement("h2");
-                            heading.textContent = "Comments on this Article";
-                            commentsContainer.appendChild(heading);
+            if (commentsData && Array.isArray(commentsData) && commentsData.length > 0) {
+                const heading = document.createElement("h2");
+                heading.textContent = "Comments on this Article";
+                commentsContainer.appendChild(heading);
 
-                            commentsData.forEach((comment) => {
-                                const commentElement = document.createElement("div");
-                                commentElement.classList.add("comment");
+                commentsData.forEach((comment) => {
+                    const commentElement = document.createElement("div");
+                    commentElement.classList.add("comment");
 
-                                const textElement = document.createElement("p");
+                    const textElement = document.createElement("p");
 
-                                textElement.textContent = comment;
-                                commentElement.appendChild(textElement);
-                                commentsContainer.appendChild(commentElement);
-                            });
-                        } else {
-                            commentsContainer.innerHTML = "<p>No comments available.</p>";
-                        }
-                    } else {
-                        commentsContainer.innerHTML = "<p>No comments available.</p>";
-                    }
-                } else {
-                    commentsContainer.innerHTML = "<p>No comments available.</p>";
-                }
+                    textElement.textContent = comment;
+                    commentElement.appendChild(textElement);
+                    commentsContainer.appendChild(commentElement);
+                });
             } else {
                 commentsContainer.innerHTML = "<p>No comments available.</p>";
             }
