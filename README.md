@@ -28,13 +28,14 @@ It supports CRUD operations, basic authentication, and PostgreSQL as the backend
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20091930.png)
+![Homepage]([https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20091930.png](https://github.com/laurasavu/AspNetCore-ArticleHub/blob/master/Screenshot%202025-06-11%20091930.png))
 
 ### Article Search and List
-![Article List](https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20092057.png)
-
+![Article List]([https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20092057.png](https://github.com/laurasavu/AspNetCore-ArticleHub/blob/master/Screenshot%202025-06-11%20092057.png))
+### Add Article
+https://github.com/laurasavu/AspNetCore-ArticleHub/blob/master/Screenshot%202025-06-11%20092004.png
 ### Edit Article
-![Edit Article](https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20092121.png)
+![Edit Article]([https://github.com/laurasavu/AspNetCore-ArticleHub/Screenshot%202025-06-11%20092121.png](https://github.com/laurasavu/AspNetCore-ArticleHub/blob/master/Screenshot%202025-06-11%20092121.png))
 
 ---
 
