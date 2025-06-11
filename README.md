@@ -53,9 +53,12 @@ https://github.com/laurasavu/AspNetCore-ArticleHub/blob/master/Screenshot%202025
    git clone https://github.com/laurasavu/AspNetCore-ArticleHub.git
    cd AspNetCore-ArticleHub
 2.   Update appsettings.json with your PostgreSQL connection string:
-   "ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=ArticleHubDB;Username=your_user;Password=your_password"
-}
+         "ConnectionStrings": {
+        "DefaultConnection": "Host=localhost;Port=5432;Database=ArticleHubDB;Username=your_user;Password=your_password"
+      }
+
 3.dotnet ef database update
+
 4.dotnet run
 
+Feel free to fork the repo, create a feature branch, and submit a pull request. Suggestions and feedback are always welcome!
