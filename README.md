@@ -1,63 +1,70 @@
-# 📰 ArticleHub
-Project Overview
-🎯 Project Goal
-I developed a centralized web platform for managing scientific articles and enabling collaboration among researchers.
 
-👥 Target Audience
-The application is intended for research institutions, academic organizations, and companies in the scientific sector that require a robust technological solution for collaborative scientific publication management.
+**ArticleHub** is a centralized web application designed for managing scientific articles and enabling efficient collaboration between researchers. It is tailored for research institutions, academic organizations, and scientific companies that require a robust and scalable solution for managing publications and research documents.
 
-🛠️ Problem Addressed / Usefulness
-Many research institutions face:
+---
 
-Fragmentation of scientific information across multiple platforms
+## 🎯 Goals
 
-Lack of a centralized overview of scientific output
+- Provide a unified platform for managing scientific publications
+- Enable collaboration across research teams and departments
+- Simplify tracking, editing, and versioning of scientific work
 
-Difficulty in collaboration between researchers from different departments
+---
 
-Main Features
-✅ Full CRUD System (Create, Read, Update, Delete):
+## 🔍 Problem Addressed
 
-Article listing
+Many research institutions struggle with:
+- Fragmentation of scientific data across multiple systems
+- Lack of centralized visibility over scientific output
+- Difficulty in managing collaboration across departments
 
-Article creation
+**ArticleHub** addresses these issues by offering a full-stack, maintainable, and extensible platform that supports modern collaboration workflows.
 
-Article editing
+---
 
-Article deletion
+## ⚙️ Features
 
-Application Architecture and Technologies Used
-Frontend (Client-side):
-HTML5 / CSS3: Page structure and visual design
+- ✅ Full **CRUD operations** (Create, Read, Update, Delete) for articles
+- 📄 Article listing, creation, editing, and deletion
+- 🔐 Basic Authentication for secured access
+- 🔄 Version management support and modular design
+- 🔍 Search and filter capabilities for scientific content
 
-JavaScript ES6: Application logic on the browser level
+---
 
-Fetch API: Asynchronous communication with the server
+## 🛠️ Technologies Used
 
-Backend (Server-side):
-ASP.NET Core 6.0: Main framework used for web application development
+### Frontend
+- **HTML5 / CSS3** – Responsive layout and visual design
+- **JavaScript (ES6)** – Client-side logic and interactivity
+- **Fetch API** – Asynchronous server communication
 
-Entity Framework Core: ORM for accessing the PostgreSQL database
+### Backend
+- **ASP.NET Core 6.0** – Web framework
+- **Entity Framework Core** – ORM for PostgreSQL
+- **AutoMapper** – Object-to-object mapping between domain entities and DTOs
+- **Custom Middleware** – Basic authentication for user access control
+- **PostgreSQL** – Relational database for persistent data storage
 
-AutoMapper: Automatic mapping between domain entities and DTOs
+---
 
-Basic Authentication: Custom middleware for authentication and security
+## 🧱 Architecture
 
-PostgreSQL: Relational database used for persistent data storage
+The app follows a **modern full-stack architecture** with clear separation of concerns:
+- Decoupled frontend and backend components
+- Scalable data layer using EF Core and PostgreSQL
+- Maintainable codebase structured around clean architecture principles
 
-Conclusion
-The application demonstrates the implementation of a modern full-stack architecture, with a clear separation between frontend and backend, using current technologies and web development best practices.
+---
 
-Benefits
-Centralization of scientific content on a single platform
+## ✅ Benefits
 
-Efficient collaboration between researchers across various fields
+- 🧠 Centralized management of scientific content
+- 👥 Improved collaboration between multidisciplinary teams
+- ⏱️ Easy tracking of publication deadlines and progress
+- 🔄 Support for version control and revisions
+- 🔎 Fast search across the article database
 
-Tracking of project progress and deadlines
-
-Version control and document revision management
-
-Fast search across the article and study database
 
 ## 📸 Screenshots
 
