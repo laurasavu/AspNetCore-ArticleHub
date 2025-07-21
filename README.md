@@ -1,29 +1,63 @@
 # 📰 ArticleHub
+Project Overview
+🎯 Project Goal
+I developed a centralized web platform for managing scientific articles and enabling collaboration among researchers.
 
-**ArticleHub** is a lightweight ASP.NET Core web application designed for managing peer-reviewed journal articles. 
-Initially intended for scientific publications, it now features a collection of programming-related articles for demo.
-It supports CRUD operations, basic authentication, and PostgreSQL as the backend database.
+👥 Target Audience
+The application is intended for research institutions, academic organizations, and companies in the scientific sector that require a robust technological solution for collaborative scientific publication management.
 
----
+🛠️ Problem Addressed / Usefulness
+Many research institutions face:
 
-## 🚀 Features
+Fragmentation of scientific information across multiple platforms
 
-- 🔍 Search for articles by keyword
-- 🧑 Author management and article attribution
-- ✍️ Create, edit, and delete articles (CRUD)
-- 🖼️ Clean and responsive UI built with HTML/CSS
-- 🧰 Built using ASP.NET Core and PostgreSQL
+Lack of a centralized overview of scientific output
 
----
+Difficulty in collaboration between researchers from different departments
 
-## 🛠️ Tech Stack
+Main Features
+✅ Full CRUD System (Create, Read, Update, Delete):
 
-- **Backend**: ASP.NET Core (.NET 6+)
-- **Frontend**:  HTML, CSS, JavaScript
-- **Database**: PostgreSQL
+Article listing
 
+Article creation
 
----
+Article editing
+
+Article deletion
+
+Application Architecture and Technologies Used
+Frontend (Client-side):
+HTML5 / CSS3: Page structure and visual design
+
+JavaScript ES6: Application logic on the browser level
+
+Fetch API: Asynchronous communication with the server
+
+Backend (Server-side):
+ASP.NET Core 6.0: Main framework used for web application development
+
+Entity Framework Core: ORM for accessing the PostgreSQL database
+
+AutoMapper: Automatic mapping between domain entities and DTOs
+
+Basic Authentication: Custom middleware for authentication and security
+
+PostgreSQL: Relational database used for persistent data storage
+
+Conclusion
+The application demonstrates the implementation of a modern full-stack architecture, with a clear separation between frontend and backend, using current technologies and web development best practices.
+
+Benefits
+Centralization of scientific content on a single platform
+
+Efficient collaboration between researchers across various fields
+
+Tracking of project progress and deadlines
+
+Version control and document revision management
+
+Fast search across the article and study database
 
 ## 📸 Screenshots
 
